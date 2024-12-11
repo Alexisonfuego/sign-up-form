@@ -7,13 +7,14 @@ body {
     padding: 0;
     display: flex;
     font-size: 20px;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 .background-image {
-    position: relative; 
+    position: relative;
     width: 30vw;
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: 140%;
     overflow: hidden;
@@ -51,23 +52,34 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    width: 70vw;
+    padding: 20px;
 }
 
 .description-container {
-    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
     outline: 1px solid black;
+}
+
+.form-container {
+    width: 100%;
 }
 
 .input-container {
     outline: 1px solid black;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .submit-container {
-    display: flex;
-    outline: 1px solid black;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .create {
