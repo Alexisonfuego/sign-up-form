@@ -1,33 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     display: flex;
     font-size: 20px;
-    overflow: hidden;
+
 }
 
 .background-image {
-    background-image: url("/images/cards-background.jpg");
-    background-size: cover;
     position: relative; 
-    width: 50vw;
+    width: 30vw;
     height: 100vh;
     background-position: center;
+    background-size: 140%;
+    overflow: hidden;
 }
 
-/* .background-image img {
-    object-fit: cover;
-    width: 40vw;
-    height: 100vh;
-} */
+.background-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Prevents scaling down */
+    min-height: 100%; /* Prevents scaling down */
+    width: auto; /* Allow width to adjust */
+    height: auto; /* Allow height to adjust */
+    transform: translate(-50%, -50%) rotate(15deg);
+    transform-origin: center;
+}
 
 .background-image p {
     position: absolute;
-    margin: 0px;
-    margin: auto;
-    bottom: 10px;
-    left: 30px;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
+    background-color: orange;
+    width: 330px;
+    text-align: center;
+
 }
 
 a {
@@ -38,11 +51,24 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
+.description-container {
+    display: flex;
+    outline: 1px solid black;
+}
+
+.input-container {
+    outline: 1px solid black;
+    display: flex;
+}
+
+.submit-container {
+    display: flex;
+    outline: 1px solid black;
+}
 
 .create {
     background-color: rgb(67, 92, 200);
