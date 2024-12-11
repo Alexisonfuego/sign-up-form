@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url("/images/cards-background.jpg");
+    background-size: cover;
+    position: relative; 
+    width: 50vw;
+    height: 100vh;
+    background-position: center;
+}
+
+/* .background-image img {
+    object-fit: cover;
+    width: 40vw;
+    height: 100vh;
+} */
+
+.background-image p {
+    position: absolute;
+    margin: 0px;
+    margin: auto;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(67, 92, 200);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.create {
+    background-color: rgb(67, 92, 200);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
