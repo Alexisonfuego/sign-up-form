@@ -50,6 +50,7 @@ a {
 }
 
 .container {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,12 +65,15 @@ a {
 }
 
 .form-container {
+    position: relative;
     width: 100%;
     background-color: grey;
 }
 
-.input-container {
-    /* outline: 1px solid black; */
+.form {
+    position: inherit; 
+    outline: 1px solid black;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
