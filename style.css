@@ -52,24 +52,24 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     width: 70vw;
-    padding: 20px;
 }
 
 .description-container {
     margin-bottom: 20px;
     text-align: center;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .form-container {
     width: 100%;
+    background-color: grey;
 }
 
 .input-container {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -80,6 +80,7 @@ a {
 .submit-container {
     margin-top: 20px;
     text-align: center;
+    transform: translateY(-150px);
 }
 
 .create {
