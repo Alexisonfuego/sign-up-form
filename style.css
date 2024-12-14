@@ -51,6 +51,11 @@ a {
     color: rgb(67, 92, 200);
 }
 
+a:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -88,7 +93,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .form div {
@@ -112,8 +117,8 @@ input {
     border-radius: 5px;
     border: 1px solid rgb(224, 224, 224);
     font-size: .9rem;
+    
 }
-
 
 input:valid {
     border-color: rgb(0, 193, 77);
@@ -137,10 +142,15 @@ input:invalid:focus {
     height: 33vh;
 }
 
-.create {
+#create {
     background-color: rgb(67, 92, 200);
     color: white;
     border-radius: 10px;
     border: none;
     padding: 10px 20px;
+}
+
+#create:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
 }
