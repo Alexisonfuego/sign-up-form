@@ -10,7 +10,8 @@ body {
     font-size: 1rem;
     height: 100vh;
     overflow: hidden;
-    
+    div[data-lastpass-icon-root] { display: none; }
+    div[data-lastpass-root] { display: none; }
 }
 
 .side-hero {
@@ -124,9 +125,9 @@ input:valid {
     border-color: rgb(0, 193, 77);
 }
 
-input:invalid:focus {
+/* input:invalid:focus {
     border-color: rgb(255, 0, 0);
-}
+} */
 
 #disclaimer {
     width: 100%;
