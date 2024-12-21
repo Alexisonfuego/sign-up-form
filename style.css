@@ -121,20 +121,6 @@ input {
     
 }
 
-input:focus {
-    outline: none;
-    border-color: rgb(67, 92, 200);
-    box-shadow: 0 0 .3rem rgba(67, 92, 200, 0.5);
-}
-
-input:valid {
-    border-color: rgb(0, 193, 77);
-}
-
-/* input:invalid:focus {
-    border-color: rgb(255, 0, 0);
-} */
-
 #disclaimer {
     width: 100%;
     margin: 10px;
@@ -162,7 +148,18 @@ input:valid {
     cursor: pointer;
 }
 
-input:invalid {
+input:focus {
+    outline: none;
+    border-color: rgb(67, 92, 200);
+    box-shadow: 0 0 .3rem rgba(67, 92, 200, 0.5);
+}
+
+input:valid {
+    border-color: rgb(0, 193, 77);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: rgb(255, 0, 0);
     animation: shake 0.2s ease-in-out 0s 2;
   }
   
